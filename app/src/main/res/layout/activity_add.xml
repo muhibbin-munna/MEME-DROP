@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context=".model.AddActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingBottom="50dp"
+        android:theme="@style/AppTheme">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/upmem" />
+
+        <Button
+            android:id="@+id/chooseButtonId"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="37dp"
+            android:background="@drawable/button_background"
+            android:text="Choose File"
+            android:textColor="#FFE23B"
+            app:layout_constraintEnd_toStartOf="@+id/uploadButtonId"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadProgressBar" />
+
+        <Button
+            android:id="@+id/uploadButtonId"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="57dp"
+            android:background="@drawable/button_background"
+            android:text="upload"
+            android:textColor="#FFE23B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/chooseButtonId"
+            app:layout_constraintTop_toBottomOf="@+id/uploadProgressBar" />
+
+        <ProgressBar
+            android:id="@+id/uploadProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:progressTint="#FFE23B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryButtonId" />
+
+        <Button
+            android:id="@+id/categoryButtonId"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="#292929"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Select Category"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/uploadProgressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

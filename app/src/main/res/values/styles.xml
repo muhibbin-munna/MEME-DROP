@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#121212</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">#FFE23B</item>
+        <item name="android:statusBarColor">#00000000</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="customfab">
+        <item name="android:background">@drawable/float_bg</item>
+        <item name="android:textColor">#FFE23B</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint">#FFB73B</item>
+        <item name="android:progressTint">#424242</item>
+        <item name="android:colorControlActivated">#c51162</item>
+        <item name="android:thumbTint">#000000</item>
+    </style>
+
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:background">#323232</item>
+        <item name="android:colorAccent">#FFE23B</item>
+        <item name="colorAccent">#FFE23B</item>
+        <item name="colorControlNormal">#FFE23B</item>
+        <item name="colorControlActivated">#FFE23B</item>
+        <item name="android:textColorPrimary">#FFE23B</item>
+        <item name="android:textColor">#FFE23B</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/PositiveButtonStyle</item>
+
+        <item name="android:textColorAlertDialogListItem">#FFE23B</item>
+    </style>
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#FFE23B</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#FFE23B</item>
+    </style>
+    <style name="NeutralButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#FFE23B</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:background">#424242</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#323232</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:textColorHint">#FFE23B</item>
+        <item name="android:textColor">#FFE23B</item>
+        <item name="android:background">#323232</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingStart">12dp</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:singleLine">true</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="NavigationView">
+        <item name="android:textColorSecondary">@color/colorNav</item>
+    </style>
+
+</resources>

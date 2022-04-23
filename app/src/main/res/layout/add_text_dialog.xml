@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/add_text_done_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rounded_border_text_view"
+        android:padding="10dp"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/add_text_edit_text"
+        style="@style/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_below="@+id/add_text_done_tv"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="Enter your text"
+        android:inputType="textMultiLine"
+        android:textColorHint="#90FFFFFF"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/alignmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/add_text_edit_text"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/rightAlignment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/left_text" />
+
+        <ImageView
+            android:id="@+id/centerAlignment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_border"
+            app:srcCompat="@drawable/middle_text" />
+
+        <ImageView
+            android:id="@+id/leftAlignment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/right_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_above="@id/textSizeLayout"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/textLL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textColorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Text Color"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/textColor"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:textColor="#FFE23B" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shadowLL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shadowColorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Shadow Color"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/shadowColor"
+                android:layout_width="55dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:textColor="#FFE23B" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/font_spinner"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFE23B"
+            android:dropDownSelector="#FFE23B"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textSizeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shadowSizeLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/textSizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Size :"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSizeSeekBar" />
+
+        <SeekBar
+            android:id="@+id/textSizeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:progressBackgroundTint="#FFE23B"
+            android:progressTint="#FFE23B"
+            android:thumb="@drawable/ic_adjust_black_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/borderSizeTextView"
+            app:layout_constraintTop_toBottomOf="@+id/textSizeSeekBar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shadowSizeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp">
+
+        <TextView
+            android:id="@+id/borderSizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Shadow Size :"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSizeSeekBar" />
+
+        <SeekBar
+            android:id="@+id/borderSizeSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="0"
+            android:progressBackgroundTint="#FFE23B"
+            android:progressTint="#FFE23B"
+            android:thumb="@drawable/ic_adjust_black_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/borderSizeTextView"
+            app:layout_constraintTop_toBottomOf="@+id/textSizeSeekBar" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

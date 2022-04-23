@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_drawer_header_layout"
+        app:itemTextColor="@color/colorAccent"
+        app:menu="@menu/nav_drawer_menu"
+        android:theme="@style/NavigationView"
+        android:background="#121212"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#212121">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#000000"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#151515"
+                android:overScrollMode="never"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="#FFE23B"
+                app:tabMode="scrollable"
+                app:tabTextColor="#FFF" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/customfab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:fab_addButtonColorNormal="#424242"
+            app:fab_addButtonColorPressed="#212121"
+            app:fab_addButtonPlusIconColor="#FFE23B"
+            app:fab_labelStyle="@style/customfab">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/uploadFabButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#424242"
+                app:fab_colorPressed="#212121"
+                app:fab_icon="@drawable/ic_file_upload_black_24dp"
+                app:fab_size="mini"
+                app:fab_title="Upload" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/createFabButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="#424242"
+                app:fab_colorPressed="#212121"
+                app:fab_icon="@drawable/outline_create_24"
+                app:fab_size="mini"
+                app:fab_title="Create" />
+
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "75033178037",
+    "firebase_url": "https://memes-b2df2.firebaseio.com",
+    "project_id": "memes-b2df2",
+    "storage_bucket": "memes-b2df2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75033178037:android:8200b107417f2abf5b33fc",
+        "android_client_info": {
+          "package_name": "com.muhibbin.memes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75033178037-07vs2vlfrh9gjhqm6j61fep3hcpjv9rd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muhibbin.memes",
+            "certificate_hash": "d26dccf6e2fb1878570172821c4fc27ab34630f9"
+          }
+        },
+        {
+          "client_id": "75033178037-u1nshmlucjqtc835hbopb7cv8492vomq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgF7wLM9J63ouWsA0TIK8ELGf5eqCGI38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75033178037-u1nshmlucjqtc835hbopb7cv8492vomq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
